@@ -9,4 +9,14 @@ bot.on("ready", function(){
 	console.log("le bot est lancé");
 });
 
+
+bot.on('message', message => {
+    if (message.author.bot) return;
+    if (!message.content.startsWith(prefix)) return;
+
+    if (message.content.startsWith(prefix + 'ping')) {
+        message.channel.sendMessage('Pong! Your ping is `' + `${Date.now() - message.createdTimestamp}` + ' ms`');
+    }
+});
+
 bot.login(token);
