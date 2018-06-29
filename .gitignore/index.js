@@ -2,8 +2,6 @@ const Discord = require("discord.js");
 const token = "NDYyMzMwOTI3NDMxOTQyMTQ2.DhgS0w.YiZzpeOrQrCoQyzLLaAMANCoWd8"
 var bot = new Discord.Client();
 const prefix = '!';
-var memberCount = client.users.size;
-var servercount = client.guilds.size;
 
 
 bot.on("ready", function(){
