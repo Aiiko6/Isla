@@ -11,12 +11,10 @@ bot.on("ready", function(){
 
 
 bot.on('message', message => {
-    if (message.author.bot) return;
-    if (!message.content.startsWith(prefix)) return;
-
-    if (message.content.startsWith(prefix + 'ping')) {
-        message.channel.sendMessage('Pong! Your ping is `' + `${Date.now() - message.createdTimestamp}` + ' ms`');
-    }
+	if (message.content === ("test")){
+	message.reply('test !');
+} else if (message.content === ("bonjour")){
+	message.reply('bonjour à toi ');
 });
 
 bot.login(token);
