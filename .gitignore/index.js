@@ -9,13 +9,4 @@ bot.on("ready", function(){
 	console.log("le bot est lancé");
 });
 
-client.on('message', message => {
-	if (message.content === (prefix + "test")){
-	message.reply('test !');
-} else if (message.content === (prefix + "bonjour")){
-	message.reply('bonjour à toi ');
-}
-});
-
-
 bot.login(token);
