@@ -10,7 +10,7 @@ bot.on("ready", function(){
 });
 
 
-bot.on('message', message => {
+client.on('message', message => {
 	if (message.content === ("test")){
 	message.reply('test !');
 } else if (message.content === ("bonjour")){
