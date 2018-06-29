@@ -16,14 +16,6 @@ client.on('message', message => {
 	message.reply('test !');
 } else if (message.content === (prefix + "bonjour")){
 	message.reply('bonjour à toi ');
-} else if(message.content.startsWith(prefix +'botname')){
-	client.user.setUsername(message.content.substr(9));
-} else if (message.content === (prefix + "stats")) {
-	let m = " ";
-	m += 'Il y a actuellement  ${message.guild.channels.size} channels sur ce serveurs \n';
-	m += 'je suis en compagnie de ${message.guild.members.size} membres';
-	m += 'je suis présent dans ${client.guild.size} serveurs \n';
-	message.author.sendMessage(m).catch(console.log); 
 }
 });
 
