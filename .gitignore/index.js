@@ -5,6 +5,12 @@ var bot = new Discord.Client();
 bot.on("ready", function(){
 	bot.user.setGame("J'aime mon maitre :)");
 	console.log("le bot est lancé");
-})
+});
+
+client.on('message', message =>{
+  if(message.content.startsWith('#test')){
+      message.reply('yes');
+     }
+});
 
 bot.login(token);
